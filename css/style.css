@@ -70,7 +70,7 @@ h3{
     text-shadow: 0px 1px 1px black;
     font-weight: 600;
 }
-#container{
+.container{
     width: 1200px;
     height: auto;
     margin: auto;
@@ -111,8 +111,9 @@ span{
     font-size: 15px;
     line-height: 1.8 ;
     font-weight: 100;
+    padding: 50px;
 }
-.imgfluid{
+.img-fluid{
     max-width: 100%;
    height: auto;
 }
@@ -126,4 +127,68 @@ span{
     line-height: 1.8;
     margin-top: 30px;
     font-weight: 100px;
+}
+#egitimler{
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    height:1000px;
+}
+.card{
+    width: 320px;
+    height: 600px;
+    border: 1px solid #ddd;
+    padding: 0;
+    display: inline-block;
+}
+.baslikcard{
+    font-size: 15px;
+    color: #003666;
+}
+.cardp{
+    color: #888;
+}
+.card: hover{
+    border: 2 px solid #888;
+}
+#ekip{
+    background-color: #003666;
+    padding: 50px;
+    height: 1000px;
+    text-align: center;
+}
+#ekiph3{
+    color: white;
+}
+.sutun-sol-sag{
+    width: 385px;
+    float: left;
+    padding: 50px;
+}
+.oval{
+    border-radius: 100%;
+}
+.ekipisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.social{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+.social:hover{
+    background-color: #888;
+}
+.ekipp{
+  color: #888; 
+    font-size: 20px;
+}
+.sutun{
+        width: 385px;
+    float: left;
+    padding: 70px;
 }
