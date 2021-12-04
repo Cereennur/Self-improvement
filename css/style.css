@@ -284,12 +284,10 @@ input[type="sumbit"]{
 }
 #up{
     color: mediumpurple;
-    border-radius: 5px;
     border: 1px solid white;
+    border-radius: 10px;
     font-size: 20px;
-    padding: 7px 100px;
-    margin-top: 10px;
-    position: fixed;
-    margin-top: 660px; 
-    margin-left: 650px;
+    padding: 7px 95px;
+    margin-top: 20px;
+    position: center;
 }
