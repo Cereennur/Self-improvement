@@ -14,16 +14,16 @@
 <link rel="stylesheet" href="owl/owl.carousel.min.css">
 <link rel="stylesheet" href="owl/owl.theme.default.min.css">
   </head>
-   <body>
+   <body bacground-color="#eee">
                
    <!--Menü Bölgesi-->  
     <section id="menu">
-        <div id="logo">Yaşam Koçluğu</div>
+        <div id="logo">YAŞAM KOÇLUĞU</div>
         <nav>
-            <a href="*"><i class="fas fa-home ikon"></i>Anasayfa</a> 
-            <a href="*"><i class="fas fa-info-circle ikon"></i>Hakkımızda</a> 
-            <a href="*"><i class="fas fa-graduation-cap ikon"></i>Eğitimler</a> 
-            <a href="*"><i class="fas fa-users ikon"></i>Ekip</a> 
+            <a href="Anasayfa"><i class="fas fa-home ikon"></i>Anasayfa</a> 
+            <a href="hakkımızda"><i class="fas fa-info-circle ikon"></i>Hakkımızda</a> 
+            <a href="egitimler"><i class="fas fa-graduation-cap ikon"></i>Eğitimler</a> 
+            <a href="ekip"><i class="fas fa-users ikon"></i>Ekip</a> 
             <a href="*"><i class="fas fa-phone-alt ikon"></i>İletişim</a> 
         </nav>
     </section>
@@ -179,6 +179,9 @@ Kişinin yönetsel yönünü keşfetmeye dayalı potansiyelini farkına vardıra
     <section id="iletisim">
         <div class="container">
             <h3 id="iletisimh3">İletişim</h3>
+            
+            
+            <form action="index.php" method="post">
             <div id="iletisimopak">
                 <div id="formgroup">
                     <div id="solform">
@@ -191,7 +194,7 @@ Kişinin yönetsel yönünü keşfetmeye dayalı potansiyelini farkına vardıra
                         <input type="text" name="Konu" placeholder="Konu Başlığı" required class="form-control">   
                     </div>
                     <textarea name="mesaj" id="" cols="30" placeholder="Mesaj Girin" rows="10" required class="form-control"></textarea>
-                    <input type="Sumbit" value="Gönder">
+                    <input type="submit" value="Gönder">
                 </div>
                 <div id="adress">
                     <h4 id="adresh4">ADRES :</h4>
@@ -204,6 +207,8 @@ Kişinin yönetsel yönünü keşfetmeye dayalı potansiyelini farkına vardıra
                    yasamkocu@gmail.com</p>           
                 </div>
             </div>
+            </form>
+            
             <footer id="copyright">
                 2021 Tüm Hakları saklıdır
             
@@ -227,3 +232,32 @@ Kişinin yönetsel yönünü keşfetmeye dayalı potansiyelini farkına vardıra
  <script src="owl/script.js"></script>
   </body>
 </html>
+
+
+
+
+<?php
+
+include("baglantı.php");
+if(isset($_POST["isim"]))
+    
+{
+    $adsoyad=$_POST["isim"];
+    $telefon=$_POST["tel"];
+    $email=$_POST["mail"];
+    $konu=$_POST["Konu"];
+    $mesaj=$_POST["mesaj"];
+    
+    $ekle="INSERT INTO iletisim(adsoyad, email, telefon, konu, mesaj) VALUES ('".$adsoyad."','".$telefon."','".$email."','".$konu."','".$mesaj."')";
+    
+    
+    if($baglan->query($ekle)===TRUE)
+{
+
+    echo  "<script>alert('Mesajınız başarıyla gönderilmiştir.')</script>";
+}
+    else{
+         echo  "<script>alert('Mesajınız gönderilirken bir hata oluştu.')</script>";
+    }
+}
+?>

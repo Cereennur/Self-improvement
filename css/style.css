@@ -8,9 +8,10 @@ body {
 #menu{
     height: 80px;
     padding: 0 30px;
+    background-color: #eee;
 } 
 #logo{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 80px;
     color:#0D4478;
     float:left;
@@ -26,6 +27,7 @@ nav a:link{
 }
 nav a:hover{
     border-bottom: 2px solid #0D4478 ;
+
 }
 nav a:visited {
      text-decoration: none ;
@@ -58,7 +60,7 @@ nav a:visited {
     font-size: 20px;
 }
 #hakkımızda{
-    background-color: #f8f9fa;
+    background-color: #eee;
     padding: 50px;
     text-align: center;
     text-transform: capitalize;
@@ -129,7 +131,7 @@ span{
     font-weight: 100px;
 }
 #egitimler{
-    background-color: #fff;
+    background-color: #eee;
     padding: 50px;
     text-align: center;
     height:1000px;
@@ -137,7 +139,7 @@ span{
 .card{
     width: 320px;
     height: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid #888;
     padding: 0;
     display: inline-block;
 }
@@ -148,8 +150,8 @@ span{
 .cardp{
     color: #888;
 }
-.card: hover{
-    border: 2 px solid #888;
+.card:hover{
+    border: 2px solid #808080;
 }
 #ekip{
     background-color: #003666;
@@ -243,7 +245,7 @@ span{
 textarea{
     font-family: Arial;
 }
-input[type="sumbit"]{
+input[type="submit"]{
     cursor: pointer;
     background-color: #445c6e;
     font-size: 18px;
