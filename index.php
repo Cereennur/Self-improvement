@@ -164,7 +164,7 @@ Kişinin yönetsel yönünü keşfetmeye dayalı potansiyelini farkına vardıra
             
                               <div class="sutun-sol-sag">
                 <img src="img/ekip2.jpg" alt="" class="img-fluid oval">
-                <h4 class="ekipisim">Zeynep Kaya</h4>
+                <h4 class="ekipisim">Zeynep Nur Kaya</h4>
                 <p class="ekipp">Sakarya Üniversitesi BSO mezunuz kurucumuz Zeynep Kaya Yaşam koçlarımız arasında yer alamaktadır.</p>
                 <div class="ekipikon">
                     <a href="*"><i class="fab fa-linkedin-in social"></i></a>
